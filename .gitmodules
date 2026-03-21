@@ -1,3 +1,6 @@
 [submodule "Projects/TheFlourJar"]
 	path = Projects/TheFlourJar
 	url = https://github.com/HALLICEE/TheFlourJar.git
+[submodule "Projects/Nailsbyt"]
+	path = Projects/Nailsbyt
+	url = https://github.com/HALLICEE/NailsByT.git
