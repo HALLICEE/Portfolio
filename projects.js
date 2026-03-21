@@ -422,7 +422,7 @@ function setupFilters(filterProjects) {
     filterProjects(selectedPath);
 }
 
-const PortfolioProjects = {
+window.PortfolioProjects = {
     filterProjects,
     getProjectById,
     projectData,
@@ -430,8 +430,6 @@ const PortfolioProjects = {
     renderProjectDetailPage,
     setupFilters
 };
-
-export default PortfolioProjects;
 
 if (
     typeof document !== "undefined" &&
