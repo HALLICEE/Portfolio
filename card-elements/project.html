@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <meta
+        name="description"
+        content="Project details"
+    >
+    <link rel="stylesheet" href="general-card.css">
+</head>
+<body data-project-detail-page>
+    <header class="detail-nav">
+        <a class="back-link" href="../index.html">← Back to portfolio</a>
+    </header>
+
+    <main class="detail-shell">
+        <section class="detail-header">
+            <h1 data-project-title>Project name</h1>
+        </section>
+
+        <section class="detail-layout">
+            <div class="detail-left-column">
+                <div class="detail-preview" data-project-preview></div>
+
+                <div class="detail-actions">
+                    <a class="primary-button" data-project-link href="#" target="_blank" rel="noopener noreferrer">Test Now</a>
+                </div>
+            </div>
+
+            <div class="detail-right-column">
+                <article class="detail-card detail-card-compact">
+                    <h2>Overview</h2>
+                    <p data-project-overview>Project overview</p>
+                </article>
+
+                <article class="detail-card">
+                    <h2>How to Test</h2>
+                    <ol class="detail-list" data-project-steps></ol>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/projects.js"></script>
+</body>
+</html>

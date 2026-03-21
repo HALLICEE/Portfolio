@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hailey's Portfolio</title>
+    <meta
+        name="description"
+        content="Portfolio of projects by Hailey."
+    >
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>Hailey's Portfolio</h1>
+        <div class="spacing"></div>
+        <div class="nav-links">
+            <a class="nav-link" href="https://github.com/HALLICEE" target="_blank">
+                <span class="nav-text">GitHub</span>
+                <span class="nav-icon"><img src="assets/github.svg" alt="GitHub"></span>
+            </a>
+            <a class="nav-link" href="mailto:fullyhailey@icloud.com">
+                <span class="nav-text">Contact</span>
+                <span class="nav-icon"><img src="./assets/avatar.svg" alt="Contact"></span>
+            </a>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <a href="index.html" class="crumb-home">Home</a>
+        <span class="crumb-selected"></span>
+        <span class="filter-separator" aria-hidden="true">&gt;</span>
+        <div class="filter-dropdown">
+            <button class="filter-btn" type="button">Filter</button>
+            <div class="filter-menu"></div>
+        </div>
+    </div>
+    <div class="content"></div>
+
+    <script src="./scripts/projects.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
