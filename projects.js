@@ -95,7 +95,7 @@ function matchesSelectedPath(projectCategories, selectedPath) {
 }
 
 function getRepoBasePath() {
-    return window.location.pathname.includes("/card-elements/") ? "../../" : "../";
+    return window.location.pathname.includes("/card-elements/") ? "../" : "./";
 }
 
 function toRepoPath(path) {
@@ -104,7 +104,8 @@ function toRepoPath(path) {
         return path;
     }
 
-    return `${getRepoBasePath()}${path}`;
+    const normalizedPath = path.replace(/^\.\//, "").replace(/^\/+/, "");
+    return `${getRepoBasePath()}${normalizedPath}`;
 }
 
 function getContent() {
@@ -170,7 +171,7 @@ function createEmptyState(selectedPath) {
 
     const description = document.createElement("p");
     description.textContent = selectedPath.length === 0
-        ? "Add a project in scripts/projects.js and it will show up here automatically."
+        ? "Add a project in projects.js and it will show up here automatically."
         : `Try a different filter path than ${selectedPath.join(" > ")}.`;
 
     emptyState.append(title, description);
@@ -241,7 +242,7 @@ function renderNotFoundState(requestedId) {
         testSteps: [
             "Go back to the portfolio page.",
             "Check the project id in the URL.",
-            "Make sure the project was added to scripts/projects.js."
+            "Make sure the project was added to projects.js."
         ]
     };
 
