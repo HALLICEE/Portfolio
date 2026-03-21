@@ -35,7 +35,7 @@ const projectData = [
         metaDescription: "Project details for The Flour Jar, a neighborhood bakery site concept with a featured pastry, category menu, reviews, and bakery visit information.",
         thumbnailPath: "./Projects/TheFlourJar/Assets/thumbnail.001.jpeg",
         thumbnailAlt: "Preview of The Flour Jar bakery site",
-        projectLink: "./Projects/TheFlourJar/index.html",
+        projectLink: "https://hallicee.github.io/TheFlourJar/",
         buttonLabel: "Test Now",
         overview: "This project is a bakery website concept and does not include a booking flow. It is built around a croissant-focused menu, a featured signature pastry, playful review moments, and clear bakery visit details.",
         testSteps: [
@@ -53,9 +53,9 @@ const projectData = [
         date: "2026-03-17",
         summary: "Booking site with an owner dashboard for appointment management.",
         metaDescription: "Project details for NailsbyT, a boutique nail studio booking site with an owner dashboard for appointment management.",
-        thumbnailPath: "./Projects/Nailsbyt/NailsbyT Thumbnail.001.jpeg",
+        thumbnailPath: "./Projects/Nailsbyt/assets/site-thumbnail.jpg",
         thumbnailAlt: "Preview of the NailsbyT booking site",
-        projectLink: "./Projects/Nailsbyt/index.html",
+        projectLink: "https://hallicee.github.io/NailsByT/",
         buttonLabel: "Test Now",
         overview: "This project showcases an appointment booking system. Visitors can explore services, browse a styled gallery, and submit a booking request with inspo uploads and scheduling details. On the admin side, the owner can review requests, assign appointment times, prepare deposit communication, confirm final bookings, and manage cancellations from the dashboard calendar.",
         testSteps: [
