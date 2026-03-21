@@ -22,9 +22,7 @@ const projectFilters = {
     }
 };
 
-// Add new cards here.
-// Copy this object, change the values, and the site will create the homepage card
-// plus the matching detail page automatically.
+
 const projectData = [
     {
         id: "theflourjar",
@@ -33,7 +31,7 @@ const projectData = [
         date: "2026-03-20",
         summary: "No booking feature. Neighborhood bakery site with a croissant menu, featured pastry, reviews, and visit info.",
         metaDescription: "Project details for The Flour Jar, a neighborhood bakery site concept with a featured pastry, category menu, reviews, and bakery visit information.",
-        thumbnailPath: "./Projects/TheFlourJar/Assets/thumbnail.001.jpeg",
+        thumbnailPath: "./assets/thumbnails/Flourjarthumbnail.jpeg",
         thumbnailAlt: "Preview of The Flour Jar bakery site",
         projectLink: "https://hallicee.github.io/TheFlourJar/",
         buttonLabel: "Test Now",
@@ -53,7 +51,7 @@ const projectData = [
         date: "2026-03-17",
         summary: "Booking site with an owner dashboard for appointment management.",
         metaDescription: "Project details for NailsbyT, a boutique nail studio booking site with an owner dashboard for appointment management.",
-        thumbnailPath: "./Projects/Nailsbyt/assets/site-thumbnail.jpg",
+        thumbnailPath: "./assets/thumbnails/NailsbyT Thumbnail.001.jpeg",
         thumbnailAlt: "Preview of the NailsbyT booking site",
         projectLink: "https://hallicee.github.io/NailsByT/",
         buttonLabel: "Test Now",
@@ -97,7 +95,7 @@ function matchesSelectedPath(projectCategories, selectedPath) {
 }
 
 function getRepoBasePath() {
-    return window.location.pathname.includes("/card-elements/") ? "../../" : "../";
+    return window.location.pathname.includes("/card-elements/") ? "../" : "./";
 }
 
 function toRepoPath(path) {
@@ -106,7 +104,8 @@ function toRepoPath(path) {
         return path;
     }
 
-    return `${getRepoBasePath()}${path}`;
+    const normalizedPath = path.replace(/^\.\//, "").replace(/^\/+/, "");
+    return `${getRepoBasePath()}${normalizedPath}`;
 }
 
 function getContent() {
