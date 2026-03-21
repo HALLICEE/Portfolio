@@ -95,7 +95,7 @@ function matchesSelectedPath(projectCategories, selectedPath) {
 }
 
 function getRepoBasePath() {
-    return window.location.pathname.includes("/card-elements/") ? "../" : "./";
+    return window.location.pathname.includes("/card-elements/") ? "../../" : "../";
 }
 
 function toRepoPath(path) {
@@ -104,8 +104,7 @@ function toRepoPath(path) {
         return path;
     }
 
-    const normalizedPath = path.replace(/^\.\//, "").replace(/^\/+/, "");
-    return `${getRepoBasePath()}${normalizedPath}`;
+    return `${getRepoBasePath()}${path}`;
 }
 
 function getContent() {
@@ -423,7 +422,7 @@ function setupFilters(filterProjects) {
     filterProjects(selectedPath);
 }
 
-window.PortfolioProjects = {
+const PortfolioProjects = {
     filterProjects,
     getProjectById,
     projectData,
@@ -431,6 +430,8 @@ window.PortfolioProjects = {
     renderProjectDetailPage,
     setupFilters
 };
+
+export default PortfolioProjects;
 
 if (
     typeof document !== "undefined" &&
