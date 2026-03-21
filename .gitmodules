@@ -1,0 +1,3 @@
+[submodule "Projects/TheFlourJar"]
+	path = Projects/TheFlourJar
+	url = https://github.com/HALLICEE/TheFlourJar.git
